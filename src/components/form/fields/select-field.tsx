@@ -235,7 +235,7 @@ const SelectField = ({ label, name, ...rest }: SelectFieldProps) => {
 
         // define selected index
         let selectedIndex = index === -1 ? -1 : index;
-        console.log(e.key)
+
         // switch key
         switch(e.key){
             case 'Tab':

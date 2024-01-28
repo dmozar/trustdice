@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+# Fruit Store React App Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To see the interactive effect, please follow this flow:
 
-## Available Scripts
+1. click the load button to load all the information of the fruit list below first. Please note: the tab "All" should include all the information of other three tabs.
+
+2. click the add button to add a new fruit. After adding, please click the load button again to update the information of the fruit list, and you'll see the new fruit added in the corresponding tab.
+
+3. click the delete button to delete an existing fruit. After deleting, please click the load button again to update the information of the fruit list, and you'll see the fruit removed from the corresponding tab.
+
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Description
 
-### `npm test`
+# Installation Guide for React.js Application with TypeScript
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This application is developed using React.js along with TypeScript. Before you proceed, make sure you have Node.js and Yarn installed on your computer.
 
-### `npm run build`
+## Installation Steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Install Node.js and Yarn (if not already installed):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you don't have Node.js installed already, you can download it from the [official Node.js website](https://nodejs.org/). Yarn can be installed via npm if it's not already installed on your system:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install -g yarn
+```
+### Clone the Projext:
 
-### `npm run eject`
+Clone or download the project from the GitHub repository or from wherever it's hosted.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+git clone https://github.com/dmozar/trustdice
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Install Dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Open your terminal and navigate into the project directory, then execute the following command to install all the necessary dependencies using Yarn:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+yarn install
+```
 
-## Learn More
+### Running the Application:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Once the installation is complete, you can start the application by running:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn start
+```
+
+###  (Optional) Install TypeScript (if not already installed):
+
+If you encounter an error related to the absence of TypeScript, you can install it globally on your system using npm:
+
+```bash
+npm install -g typescript
+```
+
+This should cover the installation and running process of your React.js application with TypeScript. If you encounter any difficulties or have any questions, feel free to ask!
