@@ -221,6 +221,9 @@ const SelectField = ({ label, name, ...rest }: SelectFieldProps) => {
      * @returns void
      **/
     const handleOnKeyDowd = (e: React.KeyboardEvent<HTMLDivElement>) => {
+
+        if(e.key === 'Tab') return;
+
         // prevent bubbling
         e.preventDefault();
 
@@ -232,9 +235,13 @@ const SelectField = ({ label, name, ...rest }: SelectFieldProps) => {
 
         // define selected index
         let selectedIndex = index === -1 ? -1 : index;
-
+        console.log(e.key)
         // switch key
         switch(e.key){
+            case 'Tab':
+                // remove focus from input
+                if(refInput.current) refInput.current.blur();
+                return;
             case 'ArrowDown':
                 if(open){
                     selectedIndex++;
@@ -466,6 +473,7 @@ const SelectField = ({ label, name, ...rest }: SelectFieldProps) => {
             <div className="select" ref={ref} tabIndex={0} onKeyDown={handleOnKeyDowd}>
                 <div className={["select__content", (open?'active':'')].join(' ')} onClick={handleClickSelect}>
                     <input 
+                        tabIndex={-1}
                         ref={refInput}
                         autoComplete="off"
                         className={["form-control", (!rest.value ? 'form-control-editable':''), (rest.className ? rest.className : '')].join(' ')}
@@ -476,6 +484,12 @@ const SelectField = ({ label, name, ...rest }: SelectFieldProps) => {
                         onChange={handleSearch}
                         onKeyDownCapture={(e) => {
                             switch(e.key){
+                                case 'Tab':
+                                    
+
+                                    e.preventDefault();
+                                    
+                                break;
                                 case 'ArrowDown':
                                 case 'ArrowUp':
                                     
