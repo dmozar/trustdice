@@ -1,3 +1,5 @@
+import React from "react";
+
 export type CatalogGroup = -1 | 0 | 1 | 2;
 
 export type CatalogItem = {
@@ -44,7 +46,7 @@ export type MessageOptions = {
 
 export type Message = {
     title: string,
-    text: string,
+    text: string | React.ReactNode,
     type: MessageType,
     options: MessageOptions
 }

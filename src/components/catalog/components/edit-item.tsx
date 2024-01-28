@@ -76,6 +76,8 @@ const defaultData = {
 
 const EditItemModal = () => {
 
+    let timeout: any = null;
+
     const { editItem, setEditItem, countries, addItem } = useCatalog();
 
     const { setPageLoad, showMessage } = useMessage();
@@ -166,6 +168,33 @@ const EditItemModal = () => {
         if (editItem === false) return;
         setData(FormService.parseDefaultValues(editItem as CatalogItem));
     }, [editItem])
+
+    useEffect(() => {
+        // Check if in local storage exists select info, if not, show info for select form field
+        if (!localStorage.getItem('selectInfo')) {
+
+            if(timeout) clearTimeout(timeout);
+
+            timeout = setTimeout(() => {
+                showMessage(
+                    'Drop list form field', 
+                    <Fragment>
+                        <p>You can navigate through select drop list with arrows UP and Down.</p>
+                        <p>Selected item remove with BACKSPACE or DELETE key.</p>
+                        <p>Perform list search by clicking on the select field when no item is selected.</p>
+                    </Fragment>, 
+                    'info', 
+                    { closeText: 'Close' }
+                );
+                localStorage.setItem('selectInfo', 'true');
+            }, 1000);
+        }
+
+        return () => {
+            if(timeout) clearTimeout(timeout);
+        }
+
+    }, [])
 
     return (
         <ValidateProvider

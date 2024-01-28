@@ -10,7 +10,7 @@ export const MessageContext = React.createContext({
     open: false,
     data: null as Message | null,
     pageLoad: false,
-    showMessage: (title:string, text:string, type: MessageType, options:MessageOptions) => {},
+    showMessage: (title:string, text:string|React.ReactNode, type: MessageType, options:MessageOptions) => {},
     closeMessage: () => {},
     setPageLoad: (status:boolean) => {}
 });
@@ -26,7 +26,7 @@ function MessageProvider({ children }: { children: React.ReactNode }) {
 
     const [pageLoad, setPageLoad] = useState(false)
     
-    const showMessage = (title:string, text:string, type: MessageType, options: MessageOptions) => {
+    const showMessage = (title:string, text:string | React.ReactNode, type: MessageType, options: MessageOptions) => {
         setData({
             title,
             text,
