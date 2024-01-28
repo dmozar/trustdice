@@ -1,0 +1,292 @@
+{
+    "stock": [
+        {
+            "id": "1",
+            "title": "Banana",
+            "description": "A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.",
+            "price": 0.99,
+            "image": "banana.png",
+            "category": "fruit",
+            "country": 1,
+            "attributes": {
+                "filter": {
+                    "hot": false,
+                    "new": false,
+                    "recommended": true
+                },
+                "details":{
+                    "organic": true,
+                    "origin": "Brazil",
+                    "weight": "1kg",
+                    "size": "medium",
+                    "color": "yellow",
+                    "shape": "curved",
+                    "taste": "sweet",
+                    "vitamins": "A, B6, C",
+                    "minerals": "potassium, magnesium, copper",
+                    "protein": "1.1g",
+                    "fat": "0.3g",
+                    "carbohydrates": "22g",
+                    "calories": "89kcal",
+                    "sugar": "12g",
+                    "fiber": "2.6g"
+                }
+            }
+        },
+        {
+            "id": "2",
+            "title": "Apple",
+            "description": "An apple is an edible fruit produced by an apple tree (Malus domestica). Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus.",
+            "price": 1.99,
+            "image": "apple.png",
+            "category": "fruit",
+            "country": 2,
+            "attributes": {
+                "filter": {
+                    "hot": false,
+                    "new": false,
+                    "recommended": true
+                },
+                "details":{
+                    "organic": true,
+                    "origin": "Poland",
+                    "weight": "1kg",
+                    "size": "medium",
+                    "color": "red",
+                    "shape": "round",
+                    "taste": "sweet",
+                    "vitamins": "A, B6, C",
+                    "minerals": "potassium, magnesium, copper",
+                    "protein": "1.1g",
+                    "fat": "0.3g",
+                    "carbohydrates": "22g",
+                    "calories": "89kcal",
+                    "sugar": "12g",
+                    "fiber": "2.6g"
+                }
+            }
+        },
+        {
+            "id": "3",
+            "title": "Orange",
+            "description": "The orange is the fruit of the citrus species Citrus × sinensis in the family Rutaceae, native to China. It is also called sweet orange, to distinguish it from the related Citrus × aurantium, referred to as bitter orange.",
+            "price": 2.99,
+            "image": "orange.png",
+            "category": "fruit",
+            "country": 1,
+            "attributes": {
+                "filter": {
+                    "hot": true,
+                    "new": false,
+                    "recommended": false
+                },
+                "details":{
+                    "organic": true,
+                    "origin": "Spain",
+                    "weight": "1kg",
+                    "size": "medium",
+                    "color": "orange",
+                    "shape": "round",
+                    "taste": "sweet",
+                    "vitamins": "A, B6, C",
+                    "minerals": "potassium, magnesium, copper",
+                    "protein": "1.1g",
+                    "fat": "0.3g",
+                    "carbohydrates": "22g",
+                    "calories": "89kcal",
+                    "sugar": "12g",
+                    "fiber": "2.6g"
+                }
+            }
+        },
+        {
+            "id": "4",
+            "title": "Pineapple",
+            "description": "The pineapple (Ananas comosus) is a tropical plant with an edible fruit and the most economically significant plant in the family Bromeliaceae.",
+            "price": 3.99,
+            "image": "pineapple.png",
+            "category": "fruit",
+            "country": 3,
+            "attributes": {
+                "filter": {
+                    "hot": false,
+                    "new": false,
+                    "recommended": true
+                },
+                "details":{
+                    "organic": true,
+                    "origin": "Brazil",
+                    "weight": "1kg",
+                    "size": "medium",
+                    "color": "yellow",
+                    "shape": "oval",
+                    "taste": "sweet",
+                    "vitamins": "A, B6, C",
+                    "minerals": "potassium, magnesium, copper",
+                    "protein": "1.1g",
+                    "fat": "0.3g",
+                    "carbohydrates": "22g",
+                    "calories": "89kcal",
+                    "sugar": "12g",
+                    "fiber": "2.6g"
+                }
+            }
+        },
+        {
+            "id": "5",
+            "title": "Strawberry",
+            "description": "The garden strawberry (or simply strawberry; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit.",
+            "price": 4.99,
+            "image": "strawberry.png",
+            "category": "fruit",
+            "country": 1,
+            "attributes": {
+                "filter": {
+                    "hot": true,
+                    "new": false,
+                    "recommended": false
+                },
+                "details":{
+                    "organic": true,
+                    "origin": "Poland",
+                    "weight": "1kg",
+                    "size": "medium",
+                    "color": "red",
+                    "shape": "oval",
+                    "taste": "sweet",
+                    "vitamins": "A, B6, C",
+                    "minerals": "potassium, magnesium, copper",
+                    "protein": "1.1g",
+                    "fat": "0.3g",
+                    "carbohydrates": "22g",
+                    "calories": "89kcal",
+                    "sugar": "12g",
+                    "fiber": "2.6g"
+                }
+            }
+        },
+        {
+            "id": "6",
+            "title": "Watermelon",
+            "description": "Watermelon (Citrullus lanatus) is a plant species in the family Cucurbitaceae, a vine-like flowering plant originating in West Africa.",
+            "price": 5.99,
+            "image": "watermelon.png",
+            "category": "fruit",
+            "country": 4,
+            "attributes": {
+                "filter": {
+                    "hot": false,
+                    "new": false,
+                    "recommended": true
+                },
+                "details":{
+                    "organic": true,
+                    "origin": "Spain",
+                    "weight": "1kg",
+                    "size": "medium",
+                    "color": "green",
+                    "shape": "oval",
+                    "taste": "sweet",
+                    "vitamins": "A, B6, C",
+                    "minerals": "potassium, magnesium, copper",
+                    "protein": "1.1g",
+                    "fat": "0.3g",
+                    "carbohydrates": "22g",
+                    "calories": "89kcal",
+                    "sugar": "12g",
+                    "fiber": "2.6g"
+                }
+            }
+        },
+        {
+            "id": "7",
+            "title": "Tomato",
+            "description": "The tomato is the edible berry of the plant Solanum lycopersicum, commonly known as a tomato plant. The species originated in western South America and Central America.",
+            "price": 6.99,
+            "image": "tomato.png",
+            "category": "vegetable",
+            "country": 1,
+            "attributes": {
+                "filter": {
+                    "hot": true,
+                    "new": false,
+                    "recommended": true
+                },
+                "details":{
+                    "organic": true,
+                    "origin": "Spain",
+                    "weight": "1kg",
+                    "size": "medium",
+                    "color": "red",
+                    "shape": "round",
+                    "taste": "sweet",
+                    "vitamins": "A, B6, C",
+                    "minerals": "potassium, magnesium, copper",
+                    "protein": "1.1g",
+                    "fat": "0.3g",
+                    "carbohydrates": "22g",
+                    "calories": "89kcal",
+                    "sugar": "12g",
+                    "fiber": "2.6g"
+                }
+            }
+        }
+    ],
+    "countries": [
+        {
+            "id": 2,
+            "title": "China",
+            "icon": "china.png"
+        },
+        {
+            "id": 3,
+            "title": "Europe",
+            "icon": "europe.png"
+        },
+        {
+            "id": 4,
+            "title": "Spain",
+            "icon": "spain.png"
+        },
+        {
+            "id": 5,
+            "title": "Japan",
+            "icon": "japan.png"
+        },
+        {
+            "id": 6,
+            "title": "Canada",
+            "icon": "canada.png"
+        },
+        {
+            "id": 7,
+            "title": "Thailand",
+            "icon": "thailand.png"
+        },
+        {
+            "id": 8,
+            "title": "Ukraine",
+            "icon": "ukraine.png"
+        },
+        {
+            "id": 9,
+            "title": "Russia",
+            "icon": "russia.png"
+        },
+        {
+            "id": 10,
+            "title": "United States",
+            "icon": "united-states.png"
+        },
+        {
+            "id": 11,
+            "title": "Brazil",
+            "icon": "brazil.png"
+        },
+        {
+            "id": 1,
+            "title": "Chile",
+            "icon": "chile.png"
+        }
+    ]
+}

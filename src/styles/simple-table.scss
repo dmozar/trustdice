@@ -1,0 +1,44 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    color: var(--color-12);
+    word-wrap: break-word;
+    font-size: 14px;
+    margin: 25px 0;
+
+    thead th {
+        background-color: var(--color-3);
+        color: var(--color-18);
+        font-weight: 600;
+    }
+
+    tbody {
+        tr {
+            background-color: var(--color-4);
+
+            &:nth-child(odd){
+                background-color: var(--color-5);
+            }
+        }
+    }
+
+    th, td {
+        padding: 8px 12px;
+        text-align: center;
+    }
+
+    td {
+        color: var(--color-12);
+    }
+
+    .table-txt-click {
+        color: var(--color-19);
+        cursor: pointer;
+
+        &:hover {
+            color: var(--color-9);
+        }
+    }
+}
